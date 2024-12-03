@@ -1,0 +1,11 @@
+data(iris)
+head(iris)
+summary(iris)
+dim(iris)
+colnames(iris)
+hist(iris$Sepal.Length,main="Histograam of Sepal Length",xlab="Sepal Length")
+plot(iris$Sepal.Length,iris$Sepal.Width,main="Scatterplot of Sepal Width vs.Sepal Length",xlab ="Sepal Length",ylab="Sepal Width")
+boxplot(iris$Sepal.Width~iris$Sepal.Length,main="Boxplot of Sepal Widthvs.Sepal Length",xlab="Sepal Length",ylab="Sepal width")
+cor(iris$Sepal.Length,iris$Petal.Length,method="pearson")
+cor_matrix<-cor(iris[,1:4])
+cor_matrix
